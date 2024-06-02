@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haruna Ali Isah's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7df;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #66bb6a;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .content {
+            padding: 2em;
+        }
+        h1 {
+            margin: 0;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            color: #388e3c;
+        }
+        footer {
+            background-color: #66bb6a;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 0.5em 0 0.2em;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+        .contact-form button {
+            padding: 0.7em;
+            background-color: #66bb6a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Haruna Ali Isah</h1>
+        <p>Faculty of Engineering, Mechatronics Department</p>
+        <p>Aliko Dangote University of Science and Technology Wudil, Kano</p>
+    </header>
+    <div class="content">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" style="width:200px;height:auto;">
+            <p>I am Haruna Ali Isah, a student at Aliko Dangote University of Science and Technology Wudil, Kano. I am studying Mechatronics in the Faculty of Engineering.</p>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Details about your projects will go here. You can add descriptions, links, images, and more to showcase your work.</p>
+            <p><a href="projects.html">See more projects</a></p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <p><a href="resume.pdf" target="_blank">Download my resume</a></p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Haruna Ali Isah</p>
+    </footer>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            // Here, you can add code to handle form submission, such as sending the data to an email or a server
+        });
+    </script>
+</body>
+</html>
